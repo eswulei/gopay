@@ -158,7 +158,7 @@ func (a *Client) pubParamsHandle(bm gopay.BodyMap, method, bizContent string, au
 	pubBody := make(gopay.BodyMap)
 	pubBody.Set("app_id", a.AppId).
 		Set("method", method).
-		Set("format", "JSON").
+		Set("format", "json").
 		Set("charset", a.Charset).
 		Set("sign_type", a.SignType).
 		Set("version", "1.0").
